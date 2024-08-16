@@ -8,19 +8,19 @@ ViennaFlightKafkaStream is a data pipeline project that uses the FlightRadar24 A
 - **Python:** Uses FlightRadar API and Kafka Python client for producing and consuming messages.
 - **Apache Kafka:** Used as a distributed streaming platform for handling real-time data processing and pipeline management.
 - **Apache Zookeeper:** A centralized service for managing and coordinating Kafka brokers in a distributed system.
-- **AWS:** Alongside used as virtual machines (EC2) to run Kafka, stores the data into AWS S3 and prepares them for visualisation in a querying form (AWS Crawler->Glue->Athena) 
-- **Qucksight:** Used to visualise the data from Athena at 15-minute intercals. 
+- **AWS:** Alongside used as virtual machines (EC2) to run Kafka, stores the data into AWS S3 and prepares them for visualisation in a querying form (AWS Crawler->Glue->Athena).
+- **Qucksight:** Used to visualise the data from Athena at 15-minute intervals. 
 
 ## Architecture
 ![kafka-pipeline-vienna-airport.png](img%2Fkafka-pipeline-vienna-airport.png)
 
 The data pipeline consists of the following steps:
 
-- Collects real-time flight data using the FlightRadar24 API
-- Streams data to a Kafka topic for processing
-- Stores flight data in an Amazon S3 bucket
-- Uses Crawler and Glue to query data from Athena
-- Visualises the data in Quicksight
+- Collects real-time flight data using the FlightRadar24 API.
+- Streams data to a Kafka topic for processing.
+- Stores flight data in an Amazon S3 bucket.
+- Uses Crawler and Glue to query data from Athena.
+- Visualises the data in Quicksight.
 
 ## Getting Started: Prerequisites and Setup
 For this project, we use a GitHub repository that hosts files for setting up the project, making it easy for anyone to get started.
