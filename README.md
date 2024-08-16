@@ -5,7 +5,7 @@ ViennaFlightKafkaStream is a data pipeline project that uses the FlightRadar24 A
 ![dahsboard_vis.png](img%2Fdahsboard_vis.png)
 
 # Technologies used
-- **Python:** Uses FlightRadar API and  the psutil library for collecting metrics data and Kafka Python client for producing and consuming messages.
+- **Python:** Uses FlightRadar API and Kafka Python client for producing and consuming messages.
 - **Apache Kafka:** Used as a distributed streaming platform for handling real-time data processing and pipeline management.
 - **Apache Zookeeper:** A centralized service for managing and coordinating Kafka brokers in a distributed system.
 - **AWS:** Alongside used as virtual machines (EC2) to run Kafka, stores the data into AWS S3 and prepares them for visualisation in a querying form (AWS Crawler->Glue->Athena) 
